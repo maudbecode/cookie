@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="connect.css">
+</head>
+<body>
+
+    <button class="open-button" onclick="openForm()">Se connecter</button>
+    
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Connexion</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit" class="btn">OK</button>
+        <button type="submit" class="btn">Créer un compte</button>
+        <button type="submit" class="btn">Rester connecté</button>
+        <a href="#">Mot de passe oublié?</a>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+    </form>
+    </div>
+    
+</body>
+<script src="connect.js"></script>
+</html>
